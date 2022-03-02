@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationgraph"
+    app:startDestination="@id/goFragment">
+
+    <fragment
+        android:id="@+id/goFragment"
+        android:name="com.techvd.constraintlayout.GoFragment"
+        android:label="fragment_go"
+        tools:layout="@layout/fragment_go" >
+        <action
+            android:id="@+id/action_goFragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseFragment"
+        android:name="com.techvd.constraintlayout.ExerciseFragment"
+        android:label="fragment_exercise"
+        tools:layout="@layout/fragment_exercise" >
+        <action
+            android:id="@+id/action_exerciseFragment_to_wellDone"
+            app:destination="@id/wellDone"
+            app:popUpTo="@id/exerciseFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_exerciseFragment_to_tryAgain"
+            app:destination="@id/tryAgain"
+            app:popUpTo="@id/exerciseFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/wellDone"
+        android:name="com.techvd.constraintlayout.WellDone"
+        android:label="fragment_well_done"
+        tools:layout="@layout/fragment_well_done" >
+        <action
+            android:id="@+id/action_wellDone_to_exerciseFragment2"
+            app:destination="@id/exerciseFragment"
+            app:popUpTo="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tryAgain"
+        android:name="com.techvd.constraintlayout.TryAgain"
+        android:label="fragment_try_again"
+        tools:layout="@layout/fragment_try_again" >
+        <action
+            android:id="@+id/action_tryAgain_to_exerciseFragment2"
+            app:destination="@id/exerciseFragment"
+            app:popUpTo="@id/exerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/about"
+        android:name="com.techvd.constraintlayout.About"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

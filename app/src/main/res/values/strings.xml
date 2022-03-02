@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Fitness Club</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="exit_button">Exit</string>
+    <string name="next_button">next</string>
+    <string name="tool_countText">10 times</string>
+    <string name="count_text">%d times</string>
+    <string name="action_bar">Exercise Number : (%d/%d)</string>
+    <string name="go_string">GO!</string>
+    <string name="go_image_description">It\'s logo of the app.</string>
+    <string name="well_done_image">Well Done You Complete the Exercises.</string>
+    <string name="next_exercise">Next Exercise</string>
+    <string name="try_again">Try Again Image</string>
+    <string name="TryAGain">Try Again!</string>
+    <string name="about_us">The purpose of this fitness app is to provide the examples of one or more types of exercises, so that user can stay fit and healthy.</string>
+    <string name="author">And, this app is create by Vinay Duggal. If you have any Suggestion and Query, then feel free to Contact Us on Vinayd454@gmail.com</string>
+    <string name="About">About</string>
+</resources>
